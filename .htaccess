@@ -1,0 +1,23 @@
+RewriteEngine On
+#rewrite url: index.php
+RewriteRule ^trang-chu$ index.php
+RewriteRule ^checkout$ index.php?controller=checkout
+#rewrite url:index.php?controller=register
+RewriteRule ^register$ index.php?controller=register
+RewriteRule ^checkout$ index.php?controller=checkout
+#rewrite url:index.php?controller=login
+RewriteRule ^login$ index.php?controller=login
+#rewrite url:index.php?controller=cart
+RewriteRule ^cart$ index.php?controller=cart
+RewriteRule ^search/(.*)$ index.php?controller=search&tukhoa=$2
+#rewrite url:index.php?controller=news_detail&id=
+RewriteRule ^product/detail/(.*)/(.*)$ index.php?controller=detail_product&id=$2
+#rewrite url: index.php?controller=product&id=5
+RewriteRule ^product/category/(.*)/(.*)$ index.php?controller=product&id=$2
+#rewrite url: index.php?controller=product&dmc=5
+RewriteRule ^product/category2/(.*)/(.*)$ index.php?controller=product&dmc=$2
+#phân trang
+RewriteRule ^product_category/(.*)/(.*)$ index.php?controller=product&id=$1&p=$2
+#phân trang
+RewriteRule ^product_category2/(.*)/(.*)$ index.php?controller=product&dmc=$1&p=$2
+RewriteRule ^search/page/(.*)/(.*)$ index.php?controller=product&tukhoa=$1&p=$2
