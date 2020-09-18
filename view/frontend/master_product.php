@@ -3,7 +3,7 @@
 <!-- Giao dien duoc chia se mien phi tai www.ptheme.net [Free HTML Download]. SKYPE[ptheme.net] - EMAIL[ptheme.net@gmail.com].-->
 <head>
     <meta charset="utf-8">
-    <base href="http://localhost:8080/banhang1/">
+    <base href="http://https://banhang12345678.herokuapp.com/">
     <title>Shoppie - Thời trang Online</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
     <meta name="description" content="Modern Online Store">
